@@ -1,7 +1,7 @@
 
 
 module.exports = function (sequelize, DataTypes) {
-    var Lead = sequelize.define("Lead", {
+    var Leads = sequelize.define("Leads", {
         name: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -24,9 +24,9 @@ module.exports = function (sequelize, DataTypes) {
                 isEmail: true
             }
         },
-        oppurtunity: {
+        opportunity: {
             type: DataTypes.BOOLEAN
         }
     });
-    return Lead;
+    return Leads;
 };

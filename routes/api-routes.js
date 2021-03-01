@@ -1,14 +1,18 @@
 var db = require("../models");
+var express = require("express");
+var app = express();
+
 module.exports = function (app) {
 
 
   // Create new leads
-  app.post("/api/leads/:id", function (req, res) {
-    db.Lead.create({
+  app.post("/api/leads", function (req, res) {
+    console.log(req.body)
+    db.Leads.create({
       name: req.body.name,
       phone: req.body.phone,
       email: req.body.email,
-      opportunity: req.body.opportunity,
+      opportunity: req.body.opportunity
     })
       .then(function (dbLead) {
         res.json(dbLead);
@@ -17,7 +21,7 @@ module.exports = function (app) {
 
   // Find all leads
   app.get("/api/leads/", function (req, res) {
-    db.Lead.findAll({})
+    db.Leads.findAll({})
       .then(function (dbLead) {
         res.json(dbLead);
       });
@@ -25,7 +29,7 @@ module.exports = function (app) {
 
   // Find specific leads
   app.get("/api/leads/:id", function (req, res) {
-    db.Lead.findOne({
+    db.Leads.findOne({
       where: {
         id: req.params.id
       }
@@ -37,7 +41,7 @@ module.exports = function (app) {
 
   // Update lead
   app.put("/api/leads", function (req, res) {
-    db.Lead.update(req.body, {
+    db.Leads.update(req.body, {
       where: {
         id: req.params.id
       }
@@ -49,7 +53,7 @@ module.exports = function (app) {
 
   // Delete lead
   app.delete("/api/leads/:id", function (req, res) {
-    db.Lead.destroy({
+    db.Leads.destroy({
       where: {
         id: req.params.id
       }

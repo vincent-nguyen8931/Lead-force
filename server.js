@@ -1,4 +1,5 @@
 var express = require("express");
+var db = require("./models");
 
 // Sets up the Express App
 // =============================================================
@@ -16,10 +17,12 @@ app.use(express.static("app/public"));
 require("./routes/api-routes.js")(app);
 
 // Here we introduce HTML routing to serve different HTML files
-require("./routes/html-routes.js")(app);
+// require("./routes/html-routes.js")(app);
 
 // Starts the server to begin listening
 // =============================================================
-app.listen(PORT, function () {
+db.sequelize.sync().then(function () {
+  app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
+  });
 });
