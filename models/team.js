@@ -1,3 +1,5 @@
+
+
 module.exports = function (sequelize, DataTypes) {
     var Team = sequelize.define("Team", {
         department: {

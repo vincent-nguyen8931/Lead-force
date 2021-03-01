@@ -16,7 +16,7 @@ department VARCHAR(45),
  PRIMARY KEY (id)
 );
 
-CREATE TABLE Lead (
+CREATE TABLE Leads (
 id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(45),
 phone VARCHAR(45),
