@@ -1,7 +1,6 @@
 import React from "react";
-// import logo from "./_Logo.png";
-import style from "./style.css";
-
+// import logo from "../Untitled1.png"
+import css from "./style.css"
 function Nav() {
     return (
 
@@ -13,7 +12,7 @@ function Nav() {
                 </button>
                 {/* <div class="w-100"> */}
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav mr-auto">
+                    <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
                             <a className="nav-link" href="#">Home</a>
                         </li>
