@@ -1,9 +1,6 @@
 var db = require("../models");
-var express = require("express");
-var app = express();
 
 module.exports = function (app) {
-
 
   // Create new leads
   app.post("/api/leads", function (req, res) {
@@ -62,4 +59,10 @@ module.exports = function (app) {
         res.json(dbLead);
       });
   });
+
+  // Create new user
+
+  // Login user
+
+  
 }
