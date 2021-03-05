@@ -21,6 +21,9 @@ function Nav() {
                         <li className="nav-item">
                             <a className="nav-link" href="#">View</a>
                         </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Sign Up</a>
+                        </li>
 
 
                     </ul>
