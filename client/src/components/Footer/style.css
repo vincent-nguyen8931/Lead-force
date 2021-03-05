@@ -1,0 +1,13 @@
+.navbar-brand1{
+padding-top: 60px;
+max-width: 17.25rem;
+padding:2rem  !important;
+height: 6rem !important;
+margin-right: 0rem;
+margin-left: 50rem;
+border-top:0.1875 solid var( --primary-dark);
+align-items:center;
+text-transform: uppercase;
+font-weight: normal;
+}
+
