@@ -1,4 +1,5 @@
 import React from 'react';
+import Member from "./pages/Member"
 // import Main from "./pages/main";
 // import Jumbotron from "./components/jumbotron"
 import Header from "./components/Header";
@@ -16,6 +17,8 @@ function App() {
       <Description />
       <Contact />
       <Footer />
+      <Member />
+
 
       {/* <Jumbotron />
       <Main /> */}
