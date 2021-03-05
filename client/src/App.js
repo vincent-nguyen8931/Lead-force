@@ -10,6 +10,7 @@ function App() {
     <>
       <Nav />
       <Member />
+
       {/* <Jumbotron />
       <Main /> */}
     </>
