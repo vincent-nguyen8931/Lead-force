@@ -1,7 +1,7 @@
 
 :root {
     --primary-white: #fff;
-    --primary-red: red;
+    --primary-red: rgba(64, 64, 240, 0.538);
     --primary-dark: rgba(255,255,255,0);
 }
 
@@ -37,6 +37,9 @@ nav ul li {
    
     text-transform: uppercase;
     
+}
+.navbar {
+    background-color: rgba(128, 128, 128, 0.111);
 }
 
 .navbar-nav>li>a.active, .navbar-nav>li>a.active:focus{
