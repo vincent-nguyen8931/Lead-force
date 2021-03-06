@@ -10,19 +10,20 @@ import Footer from "./components/Footer";
 import Description from "./components/Description";
 function App() {
   return (
-    <>
+    <div>
+      <Member />
       <Nav />
       <Header />
       <About />
       <Description />
       <Contact />
       <Footer />
-      <Member />
+      
     {/* <Route exact path="/"></Route> */}
 
       {/* <Jumbotron />
       <Main /> */}
-    </>
+    </div>
   );
 }
 

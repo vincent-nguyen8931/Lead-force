@@ -2,17 +2,13 @@ import React, { Component } from "react";
 import API from "../utils/API"
 
 class Member extends Component {
-
-  constructor() {
-    super();
-    this.state = {
+    state = {
       username: "",
       password: "",
       email: ""
     };
-  }
 
-signUp = (e) => {
+signUp = () => {
 
  API.signUp().then(data => {
    this.setState({
@@ -20,6 +16,7 @@ signUp = (e) => {
      password: data.password,
      email: data.email
    })
+   .catch(err => console.log(err));
    
  })
 }

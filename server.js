@@ -17,11 +17,9 @@ app.use(express.static("client/build"));
 // =============================================================
 require("./routes/api-routes.js")(app);
 
-if (process.env.NODE_ENV === "production") {
 app.use(function (req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"))
 })
-}
 
 // Here we introduce HTML routing to serve different HTML files
 // require("./routes/html-routes.js")(app);
