@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import API from "../utils/API"
 
 class Member extends Component {
 
@@ -13,16 +14,13 @@ class Member extends Component {
 
 signUp = (e) => {
 
-var {username, password, email}=this.state;
- fetch("/api/reigsterUser", {
-   method: "post",
-   body: JSON.stringify({
-    username: username,
-    password: password,
-    email: email
+ API.signUp().then(data => {
+   this.setState({
+     username: data.username,
+     password: data.password,
+     email: data.email
    })
- }).then (response=>response.json()).then(data => {
-   window.alert(data)
+   
  })
 }
 

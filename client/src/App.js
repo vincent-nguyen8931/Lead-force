@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Router, Route} from 'react';
 import Member from "./pages/Member"
 // import Main from "./pages/main";
 // import Jumbotron from "./components/jumbotron"
@@ -18,7 +18,7 @@ function App() {
       <Contact />
       <Footer />
       <Member />
-
+    {/* <Route exact path="/"></Route> */}
 
       {/* <Jumbotron />
       <Main /> */}

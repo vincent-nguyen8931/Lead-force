@@ -1,7 +1,7 @@
-// import axios from "axios";
+import axios from "axios";
 
-// export default {
-//   getTodos: function () {
-//     return axios.get("/api/todos")
-//   }
-// }
+export default {
+  signUp: function () {
+    return axios.post("/api/reigsterUser")
+  }
+}

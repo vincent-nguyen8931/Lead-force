@@ -93,5 +93,4 @@ module.exports = function (app) {
     res.json(req.user);
   });
 
-
 }
