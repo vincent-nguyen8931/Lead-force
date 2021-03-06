@@ -8,10 +8,12 @@ function Description() {
             <div id="about"></div>
             <div className="about">
                 {/* <img src={picture} className="profile-pic"></img> */}
-                <h1 class="about-Name">Lead Force</h1>
+                <h1 class="about-Name">WHY CHOOSE LEAD FORCE?</h1>
+                <p>Our goal is to help companies find new customers and to help organize customer and propspect information</p>
                 <div className="line-break"></div>
-                <h2 className="LogoName">| Lead Management System |</h2>
-                <p>We are Lead Force!</p>
+                <h1 class="description">WHAT ARE LEADS?</h1>
+
+                <p></p>
             </div>
 
 

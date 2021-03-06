@@ -56,3 +56,10 @@ h2 {
             /* border-top: 1px solid black */
         }
 
+ .Lead-Header{
+     color:black;
+     margin-top: 1rem;
+     text-transform: uppercase;
+     
+ }
+
