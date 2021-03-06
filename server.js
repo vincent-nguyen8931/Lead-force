@@ -1,5 +1,6 @@
 var express = require("express");
 var db = require("./models");
+var path = require("path");
 
 // Sets up the Express App
 // =============================================================
@@ -10,11 +11,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Static directory to be served
-app.use(express.static("app/public"));
+app.use(express.static("client/build"));
 
 // Routes
 // =============================================================
 require("./routes/api-routes.js")(app);
+
+app.use(function (req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"))
+})
 
 // Here we introduce HTML routing to serve different HTML files
 // require("./routes/html-routes.js")(app);

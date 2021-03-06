@@ -1,0 +1,51 @@
+
+:root {
+    --primary-white: #fff;
+    --primary-red: rgba(64, 64, 240, 0.538);
+    --primary-dark: rgba(255,255,255,0);
+}
+
+/* .logo{
+    width: 15rem;
+    height: 6rem;
+} */
+
+nav a.nav-link {
+    font-weight:500;
+    letter-spacing: 0.0375rem;
+    cursor:pointer;
+}
+
+nav ul li {
+    text-transform: uppercase;
+}
+
+.navbar-nav> li > a {
+    color: black;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    border-top:0.1875 solid var( --primary-dark);
+}
+
+.navbar-brand {
+    max-width: 17.25rem;
+    padding:2rem  !important;
+    height: 6rem !important;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    border-top:0.1875 solid var( --primary-dark);
+   
+    text-transform: uppercase;
+    
+}
+.navbar {
+    background-color: rgba(128, 128, 128, 0.111);
+}
+
+.navbar-nav>li>a.active, .navbar-nav>li>a.active:focus{
+    border-top:0.1874rem solid var(--primary-red);
+}
+.navbar-nav>li>a:hover {
+    border-top:0.1874rem solid var(--primary-red);
+
+}
