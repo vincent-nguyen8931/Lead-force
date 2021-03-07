@@ -1,6 +1,8 @@
 var express = require("express");
 var db = require("./models");
 var path = require("path");
+var session = require("express-session");
+var passport = require("passport")
 
 // Sets up the Express App
 // =============================================================
@@ -12,6 +14,15 @@ app.use(express.json());
 
 // Static directory to be served
 app.use(express.static("client/build"));
+
+// Passport use
+app.use(session({
+  secret: 'keyboard cat',
+  resave: true,
+  saveUninitialized: true
+})); // session secret
+app.use(passport.initialize());
+app.use(passport.session()); // persistent login sessions
 
 // Routes
 // =============================================================
