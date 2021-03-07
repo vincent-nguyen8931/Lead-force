@@ -3,41 +3,40 @@ import axios from "axios";
 import API from "../utils/API"
 
 class Member extends Component {
-
-
-/*
-  var [username, setUsername] = useState("");
-  var [password, setPassword] = useState("");
-  var [email, setEmail] = useState("");
-  */
+// create constructor that takes in props
   constructor(props) {
     super(props)
 
+// will read the changes made in each input field on this page
     this.onChangeUsername = this.onChangeUsername.bind(this);
     this.onChangePassword = this.onChangePassword.bind(this);
     this.onChangeEmail = this.onChangeEmail.bind(this);
     this.onClick = this.onClick.bind(this);
   
+    // initial state to set keyname and values
     this.state = {
       username: "",
       password: "",
       email: ""
     };
   }
-    
 
+  // function to listen for username input
   onChangeUsername(e) {
     this.setState({username: e.target.value})
   }
 
+  // function to listen for password input
   onChangePassword(e) {
     this.setState({password: e.target.value})
   }
 
+  // function to listen for email input
   onChangeEmail(e) {
     this.setState({email: e.target.value})
   }
 
+  // "isten for click. Next create a userObject that contains the username, password, and email states from this page. Next send this userObject to the route setup by the backend to interact with the database. Lastly, reset the state of the input boxes to empty.
 onClick(e) {
   e.preventDefault()
 
@@ -47,7 +46,7 @@ var userObject = {
   email: this.state.email
 };
 
-  axios.post("/api/registerUser", userObject).then(res => {
+  API.signUp(userObject).then(res => {
    console.log(res.data)
     })
     .catch(err => console.log(err));
@@ -55,25 +54,6 @@ var userObject = {
     this.setState({username: "", password: "", email: ""})
     
   };
-
-
-// handleInputChange = event => {
-//   var fieldName = event.target.name;
-//   var fieldValue = event.target.value;
-//   this.setState({
-//     [fieldName]: fieldValue
-//   }); 
-// }
-
-  // var handleInputChange = e => {
-  //   e.preventDefault();
-  //   console.log("username is " + username);
-  //   console.log("password is " + password);
-  //   console.log("email is " + email);
-  //   API.signUp().then(data => console.log(data))
-  //     .catch(err => console.log(err));
-
-  // }
 
 render() {
   return (
