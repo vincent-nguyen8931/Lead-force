@@ -1,0 +1,100 @@
+.div-login{
+    width: 8rem;
+    height:8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin: 0 auto; */
+  
+    /* border: 1px solid black; */
+    /* border-radius: 1rem; */
+    
+    padding: 2rem;
+    margin-top: 22.2rem;
+    background-color: white;
+    padding-bottom: 30rem;
+} 
+.row{
+    border: 1px solid black;
+    margin-top:auto;
+   width: 60rem;
+   height: 60rem;
+   justify-self: center;
+   
+}
+input{
+    width: 500%;
+    height: 8%;
+    border: 1px solid #dbdbdb;
+    padding: 1rem;
+    /* margin-right: 3rem; */
+    margin: 1rem;
+    border-radius: 2rem;
+    /* align-items: center; */
+    background-color: #fafafa;
+    margin-top: 1rem;
+    /* box-shadow: none; */
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+}
+
+button{
+    width: 200%;
+    margin: 2rem ;
+    background-color: dodgerblue;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 1rem;
+    font-weight: 600;
+    border: none;
+    color: white;
+    border-radius: 3rem;
+    
+}
+
+.signup{
+    color:black
+}
+
+.signingup{
+    text-align:center;
+}
+.signup1{
+    /* height: 5rem; */
+    /* width: 4rem; */
+    /* align-self: center; */
+}
+
+.div-login1{
+    width: 8rem;
+    height:8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin: 0 auto; */
+    /* border: 1px solid black; */
+    border-radius: 5rem;
+    padding: 2rem;
+    margin-top: 21rem;
+    /* margin-left:7rem; */
+    padding-bottom: 30rem;
+    
+    background-color: white;
+}
+
+.signupText{
+    font-size: 0.9rem;
+    /* margin-top: 3rem; */
+}
+
+/* .linebreak{
+    width: 10rem;
+    border-top:1px solid black;
+    margin-bottom: 3rem;
+} */
+
+/* .logo{
+    background: url(Leads\ Force\ Logo.png) center;
+    width: 100rem;
+    margin-right:0;
+    margin-left: 50rem;
+    display:block;
+} */
