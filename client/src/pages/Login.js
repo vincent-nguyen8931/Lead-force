@@ -26,6 +26,7 @@ function Login() {
                     <button>Login</button>
                 </div >
             </div>
+            <div className="logo"></div>
         </div>
 
     )
