@@ -16,9 +16,8 @@ function App() {
       <About />
       <Description />
       <Contact />
-      <Footer />
       <Member />
-
+      <Footer />
 
       {/* <Jumbotron />
       <Main /> */}
