@@ -4,7 +4,7 @@ import style from "./style.css"
 export default function Table() {
     return (
         <div className="table1">
-            <table className="table table-bordered">
+            <table className="table table-bordered table-hover">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
