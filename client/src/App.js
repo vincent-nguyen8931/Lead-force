@@ -21,9 +21,9 @@ function App() {
       {/* <About /> */}
       {/* <Description /> */}
       {/* <Contact /> */}
-      {/* <Member /> */}
+      <Member />
       <Footer />
-      <Login />
+      {/* <Login /> */}
       {/* <Route exact path="/login" component={Login} /> */}
 
       {/* <Jumbotron />
