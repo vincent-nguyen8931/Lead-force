@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Navbar from "../components/Navbar";
-import About from "../components/About";
-import LeadHeader from "../components/LeadHeader";
-import Input from "../components/Form";
+import Navbar from "../../components/Navbar";
+import About from "../../components/About";
+import LeadHeader from "../../components/LeadHeader";
+import Input from "../../components/Form";
 // import style from "./member.css"
 class Member extends Component {
 

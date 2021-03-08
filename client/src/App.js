@@ -1,5 +1,5 @@
 import React from 'react';
-import Member from "./pages/Member"
+import Member from "./pages/Members"
 // import Main from "./pages/main";
 // import Jumbotron from "./components/jumbotron"
 import Header from "./components/Header";
