@@ -4,6 +4,7 @@ import Nav from "../../components/Navbar";
 import Member from "../Member"
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer";
 
 class Login extends Component {
   // create constructor that takes in props
@@ -95,34 +96,36 @@ class Login extends Component {
       <div>
         <Nav />
 
-      <div className="row" >
-        <div className="col-6" >
-          <div className="div-login">
-            <h2 className="signup">SignUp</h2>
-            <div className="linebreak"></div>
-            <input placeholder="Username" onChange={this.onChangeUsername} name="username" value={this.state.username} />
-            <input placeholder="Password" onChange={this.onChangePasswordSignup} name="passwordSignup" value={this.state.passwordSignup} />
-            <input placeholder="Email Address" onChange={this.onChangeEmailSignup} name="emailSignup" value={this.state.emailSignup} />
-            <button name="userSignup" onClick={this.userSignup}>Sign Up</button>
-          </div >
+        <div className="row" >
+          <div className="col-6" >
+            <div className="div-login">
+              <h2 className="signup">SignUp</h2>
+              <div className="linebreak"></div>
+              <input placeholder="Username" onChange={this.onChangeUsername} name="username" value={this.state.username} />
+              <input placeholder="Password" onChange={this.onChangePasswordSignup} name="passwordSignup" value={this.state.passwordSignup} />
+              <input placeholder="Email Address" onChange={this.onChangeEmailSignup} name="emailSignup" value={this.state.emailSignup} />
+              <button name="userSignup" onClick={this.userSignup}>Sign Up</button>
+            </div >
 
+          </div>
+          <div className="col-6" >
+            <div className="div-login1">
+              <h2 className="login">Login</h2>
+              <div className="linebreak"></div>
+              <input placeholder="Email Address" onChange={this.onChangeEmailLogin} name="emailLogin" value={this.state.emailLogin} />
+              <input placeholder="Password" onChange={this.onChangePasswordLogin} name="passwordLogin" value={this.state.passwordLogin} />
+              <Link to="/member" commponent={Member}>
+                <button name="userLogin" onClick={this.userLogin}>Login</button>
+              </Link>
+            </div >
+          </div>
+          <div className="logo"></div>
         </div>
-        <div className="col-6" >
-          <div className="div-login1">
-            <h2 className="login">Login</h2>
-            <div className="linebreak"></div>
-            <input placeholder="Email Address" onChange={this.onChangeEmailLogin} name="emailLogin" value={this.state.emailLogin} />
-            <input placeholder="Password" onChange={this.onChangePasswordLogin} name="passwordLogin" value={this.state.passwordLogin} />
-            <Link to="/member" commponent={Member}>
-            <button name="userLogin" onClick={this.userLogin}>Login</button>
-            </Link>
-          </div >
-        </div>
-        <div className="logo"></div>
+        <Footer />
       </div>
-      </div>
+
     )
-}
+  }
 }
 
 export default Login;
