@@ -15,7 +15,7 @@
     padding-bottom: 30rem;
 } 
 .row{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top:auto;
    width: 60rem;
    height: 60rem;
@@ -81,7 +81,9 @@ button{
     /* margin-left:7rem; */
     padding-bottom: 30rem;
     
-    background-color: white;
+}
+.login{
+    color:black;
 }
 
 .signupText{
