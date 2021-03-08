@@ -1,7 +1,11 @@
-// import axios from "axios";
+import axios from "axios";
 
-// export default {
-//   getTodos: function () {
-//     return axios.get("/api/todos")
-//   }
-// }
+export default {
+  signUp: function (userData) {
+    return axios.post("/api/registerUser", userData)
+  },
+
+  login: function (userData) {
+    return axios.post("/api/login", userData)
+  }
+}

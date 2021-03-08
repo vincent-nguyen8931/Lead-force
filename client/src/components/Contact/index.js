@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div className="header-wrapper">
             <div className="contact-box">
-                <div id="contact"></div>
+             
                 {/* <img src={contact} class="contact-pic"></img> */}
                 <h1>Contact Us</h1>
                 <div className="line-break1"></div>
@@ -38,14 +38,6 @@ const Contact = () => {
 
             </div >
         </div>
-
-
-
-
-
-
-
-
 
     )
 }

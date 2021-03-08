@@ -1,35 +1,18 @@
 import React from 'react';
-import Member from "./pages/Members"
-// import Main from "./pages/main";
-// import Jumbotron from "./components/jumbotron"
-import Header from "./components/Header";
-import Nav from "./components/Navbar";
-import About from "./components/About";
-import Contact from "./components/Contact"
-import Footer from "./components/Footer";
-import Description from "./components/Description";
-import Login from "./pages/Login/Login";
-import { BrowserRouter as Route, Router } from "react-router-dom";
+import Home from "./pages/Home"
+import Login from "./pages/Login";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    // <Router>
-    <div >
-
-      <Nav />
-      {/* <Header /> */}
-      {/* <About /> */}
-      {/* <Description /> */}
-      {/* <Contact /> */}
-      <Member />
-      <Footer />
-      {/* <Login /> */}
-      {/* <Route exact path="/login" component={Login} /> */}
-
-      {/* <Jumbotron />
-      <Main /> */}
+    <BrowserRouter>
+    <div>
+      <Switch>
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/" component={Home} />
+      </Switch>
     </div>
-
+    </BrowserRouter>
   );
 }
 
