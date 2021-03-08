@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar";
 import About from "../../components/About";
 import LeadHeader from "../../components/LeadHeader";
 import Input from "../../components/Form";
+import Table from "../../components/Table";
 // import style from "./member.css"
 class Member extends Component {
 
@@ -43,7 +44,7 @@ class Member extends Component {
       <div>
         <About />
         <LeadHeader />
-
+        <Table />
 
       </div>
     )
