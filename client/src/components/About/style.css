@@ -9,15 +9,16 @@
     margin-top: 10rem;
     text-align: center;
 } */
-.container-1{
+#about{
     position:relative;
     background: url(office1.jpg)no-repeat;
     background-size: cover;
     background-position: center;
-    height: 50vh;
-    padding: 20px;
-    margin: 0 auto;
-    margin-top: 4rem;
+    margin-top: 5rem;
+    /* height: 50vh; */
+    /* padding: 20px; */
+    /* margin: 0 auto; */
+    /* margin-top: 4rem; */
     text-align: center;
     /* width: 150vh; */
 }

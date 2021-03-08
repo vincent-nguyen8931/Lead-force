@@ -48,7 +48,7 @@ class Members extends Component {
         <About />
         <LeadHeader />
         <Table />
-        <Footer />
+        {/* <Footer /> */}
 
       </div>
     )

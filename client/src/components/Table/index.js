@@ -16,7 +16,7 @@ export default function Table() {
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
-                <tbody>
+                {/* <tbody>
                     {data.map(item =>
                         <TableData
                             name={item.name}
@@ -25,7 +25,7 @@ export default function Table() {
                             oppurtunity={item.oppurtunity}
                         />)}
 
-                </tbody>
+                </tbody> */}
             </table>
         </div >
     )

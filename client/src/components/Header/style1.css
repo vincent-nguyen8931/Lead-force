@@ -1,21 +1,24 @@
-.header-wrapper1 {
+.jumbotron {
     position:relative;
     background: url(back4.png);
     background-size: cover;
     background-position: center;
-    height: 40vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+color:white
+    /* height: 40vh; */
 
 }
-
+/* 
 .main-info1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
+} */
 
-h1 {
+/* h1 {
     color:white;
     font-weight: 100;
     letter-spacing: 6;
@@ -28,7 +31,7 @@ h2 {
     font-size: 36px;
     margin-top: 10rem;
     
-}
+} */
 
 /* .contact-box{
     width: 600px;

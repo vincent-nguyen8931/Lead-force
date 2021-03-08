@@ -29,21 +29,21 @@ class Login extends Component {
       emailLogin: ""
     };
   }
-    // redicret true or redirect false in component
-    // but redirect also has to be rendered
-    // create button that is aware of state of parent
-    // oncilck with redirect and perform callback
-    // callback frst, change loal state
-    // makes all child rerendered
-    // child sees redirect and render redicrect instead of button
+  // redicret true or redirect false in component
+  // but redirect also has to be rendered
+  // create button that is aware of state of parent
+  // oncilck with redirect and perform callback
+  // callback frst, change loal state
+  // makes all child rerendered
+  // child sees redirect and render redicrect instead of button
 
-    // withRouter on component
-    // provide component to give access to history
+  // withRouter on component
+  // provide component to give access to history
 
-// function to listen for username input, password input on signup + login, & email input on signup + login
-onChangeState(e, key) {
-  this.setState({ [key]: e.target.value })
-}
+  // function to listen for username input, password input on signup + login, & email input on signup + login
+  onChangeState(e, key) {
+    this.setState({ [key]: e.target.value })
+  }
 
   // Listen for click for user signup. Next create a userObjectSignup that contains the username, password, and email states from this page. Next send this userObjectSignup to the route setup by the backend to interact with the database. Lastly, reset the state of the input boxes to empty.
   userSignup(e) {
@@ -74,7 +74,7 @@ onChangeState(e, key) {
     API.login(userObjectLogin).then(res => {
       console.log(res.data)
       console.log("Pulled information successfull")
-        this.setState({redirect: true})
+      this.setState({ redirect: true })
     })
       .catch(err => console.log(err));
 
@@ -104,15 +104,15 @@ onChangeState(e, key) {
               <div className="linebreak"></div>
               <input placeholder="Email Address" onChange={(e) => this.onChangeState(e, "emailLogin")} name="emailLogin" value={this.state.emailLogin} />
               <input placeholder="Password" onChange={(e) => this.onChangeState(e, "passwordLogin")} name="passwordLogin" value={this.state.passwordLogin} />
-      
+
               <button name="userLogin" onClick={this.userLogin}>Login</button>
               {/* <Link to="/members" name="userLogin" onClick={this.userLogin}>Login</Link> */}
             </div >
           </div>
           <div className="logo"></div>
         </div>
-        <Footer />
-        {this.state.redirect ? <Redirect/> : null}
+        {/* <Footer /> */}
+        {this.state.redirect ? <Redirect /> : null}
       </div>
 
     )
