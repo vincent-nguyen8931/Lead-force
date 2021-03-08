@@ -1,5 +1,5 @@
 import React from "react";
-import style1 from "./style1.css"
+import style2 from "./style2.css"
 // import contact from "../contact.png"
 const Contact = () => {
     return (
