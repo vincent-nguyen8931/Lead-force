@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Members from "./pages/Members";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {

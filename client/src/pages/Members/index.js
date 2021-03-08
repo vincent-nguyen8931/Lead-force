@@ -4,6 +4,8 @@ import About from "../../components/About";
 import LeadHeader from "../../components/LeadHeader";
 import Input from "../../components/Form";
 import Table from "../../components/Table";
+import Footer from "../../components/Footer";
+
 // import style from "./member.css"
 class Members extends Component {
 
@@ -42,9 +44,11 @@ class Members extends Component {
   render() {
     return (
       <div>
+        <Navbar />
         <About />
         <LeadHeader />
         <Table />
+        <Footer />
 
       </div>
     )

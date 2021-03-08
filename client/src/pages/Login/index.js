@@ -6,6 +6,9 @@ import Redirect from "../../components/Redirect";
 import Nav from "../../components/Navbar";
 import Members from "../Members"
 import API from "../../utils/API";
+import { Link } from "react-router-dom";
+import Footer from "../../components/Footer";
+
 
 class Login extends Component {
   // create constructor that takes in props
@@ -108,8 +111,10 @@ onChangeState(e, key) {
           </div>
           <div className="logo"></div>
         </div>
+        <Footer />
         {this.state.redirect ? <Redirect/> : null}
       </div>
+
     )
   }
 }
