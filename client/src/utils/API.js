@@ -15,9 +15,9 @@ export default {
       axios.post("/api/leads", userData))
   },
 
-  getAllLeads: function (userData) {
+  getAllLeads: function () {
     return (
-      axios.get("/api/leads/", userData))
+      axios.get("/api/leads/"))
   },
 
   getLead: function (userData) {

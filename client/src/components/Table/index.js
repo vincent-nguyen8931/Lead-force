@@ -5,9 +5,18 @@ import API from "../../utils/API";
 
 export default class Table extends Component {
 
+  state = {
+    leads: []
+  }
+
+  componentDidMount() {
+    this.getEveryLead()
+  }
+
   getEveryLead() {
     API.getAllLeads().then(res => {
       console.log(res.data)
+      this.setState({leads: res.data})
     })
       .catch(err => console.log(err));
   }
@@ -27,7 +36,7 @@ export default class Table extends Component {
             </tr>
           </thead>
           <tbody>
-            {this.getEveryLead.map(item =>
+            {this.state.leads.map(item =>
               <TableData
                 name={item.name}
                 email={item.email}
