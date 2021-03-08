@@ -6,6 +6,8 @@ export default {
   },
 
   login: function (userData) {
-    return axios.post("/api/login", userData)
+    return (
+      console.log("Reached axios post"),
+      axios.post("/api/login", userData))
   }
 }

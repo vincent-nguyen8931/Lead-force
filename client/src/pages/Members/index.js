@@ -5,7 +5,7 @@ import LeadHeader from "../../components/LeadHeader";
 import Input from "../../components/Form";
 import Table from "../../components/Table";
 // import style from "./member.css"
-class Member extends Component {
+class Members extends Component {
 
   constructor() {
     super();
@@ -51,4 +51,4 @@ class Member extends Component {
   }
 }
 
-export default Member;
+export default Members;
