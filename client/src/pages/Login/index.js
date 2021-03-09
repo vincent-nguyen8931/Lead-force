@@ -68,13 +68,13 @@ class Login extends Component {
 
   render() {
     return (
-      <div>
+      <div className="loginstyle">
         <Nav />
         <div className="row" >
           <div className="col-6" >
             <div className="div-login">
-              <h2 className="signup">SignUp</h2>
-              <div className="linebreak"></div>
+              <h2 className="signup">Signup</h2>
+
               <input placeholder="Username" onChange={(e) => this.onChangeState(e, "username")} name="username" value={this.state.username} />
               <input placeholder="Password" onChange={(e) => this.onChangeState(e, "passwordSignup")} name="passwordSignup" value={this.state.passwordSignup} />
               <input placeholder="Email Address" onChange={(e) => this.onChangeState(e, "emailSignup")} name="emailSignup" value={this.state.emailSignup} />
@@ -85,14 +85,14 @@ class Login extends Component {
           <div className="col-6" >
             <div className="div-login1">
               <h2 className="login">Login</h2>
-              <div className="linebreak"></div>
+
               <input placeholder="Email Address" onChange={(e) => this.onChangeState(e, "emailLogin")} name="emailLogin" value={this.state.emailLogin} />
               <input placeholder="Password" onChange={(e) => this.onChangeState(e, "passwordLogin")} name="passwordLogin" value={this.state.passwordLogin} />
 
               <button name="userLogin" onClick={this.userLogin}>Login</button>
             </div>
           </div>
-          <div className="logo"></div>
+
         </div>
         <Footer />
         {this.state.redirect ? <Redirect /> : null}
