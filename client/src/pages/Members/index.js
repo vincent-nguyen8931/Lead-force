@@ -5,8 +5,7 @@ import LeadHeader from "../../components/LeadHeader";
 import Table from "../../components/Table";
 import Footer from "../../components/Footer";
 
-// import style from "./member.css"
-class Members extends Component {
+export default class Members extends Component {
 
   render() {
     return (
@@ -15,11 +14,8 @@ class Members extends Component {
         <About />
         <LeadHeader />
         <Table />
-        {/* <Footer /> */}
-
+        <Footer />
       </div>
     )
   }
 }
-
-export default Members;

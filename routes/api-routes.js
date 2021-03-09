@@ -10,8 +10,7 @@ module.exports = function (app) {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
       phone: req.body.phone,
-      email: req.body.email,
-      opportunity: req.body.opportunity
+      email: req.body.email
     })
       .then(function (dbLead) {
         res.json(dbLead);
@@ -26,7 +25,7 @@ module.exports = function (app) {
       });
   });
 
-  // Find specific leads
+  // Find specific leads based on id
   app.get("/api/leads/:id", function (req, res) {
     db.Lead.findOne({
       where: {
@@ -38,19 +37,22 @@ module.exports = function (app) {
       });
   });
 
-  // Update lead
-  app.put("/api/leads", function (req, res) {
+  // Update lead based on id
+  app.put("/api/leads/:id", function (req, res) {
+    console.log("hello")
     db.Lead.update(req.body, {
       where: {
         id: req.params.id
       }
     })
       .then(function (dbLead) {
+        console.log("dbLead")
+        console.log(dbLead)
         res.json(dbLead);
       });
   });
 
-  // Delete lead
+  // Delete lead based on id
   app.delete("/api/leads/:id", function (req, res) {
     db.Lead.destroy({
       where: {

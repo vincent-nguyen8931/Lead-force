@@ -25,13 +25,14 @@ export default {
       axios.get("/api/leads/:id", userData))
   },
 
-  updateLead: function (userData) {
+  updateLead: function (id, userData) {
+    console.log("axios call of update.")
     return (
-      axios.put("/api/leads", userData))
+      axios.put("/api/leads/" + id, userData))
   },
 
-  deleteLead: function (userData) {
+  deleteLead: function (id, userData) {
     return (
-      axios.delete("/api/leads/:id", userData))
+      axios.delete("/api/leads/" + id, userData))
   }
 }

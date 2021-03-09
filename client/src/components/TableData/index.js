@@ -1,19 +1,19 @@
 import React from "react";
+import UpdateButton from "../UpdateButton";
+import DeleteButton from "../DeleteButton";
 
-function TableData(props) {
+export default function TableData(props) {
+// returns the table information listed per prop. Each button component is given an id to know which row in the database they are interacting with.
     return (
         <tr>
-            <th scope="row">1</th>
             <td>{props.firstName}</td>
             <td>{props.lastName}</td>
             <td>{props.email}</td>
             <td>{props.phone}</td>
             <td style={{ width: "9%" }}>
-                <button className="btn3 btn-primary badge-pill float-right" >Update</button>
-                <button className="btn3 btn-danger badge-pill float-right" >Delete</button>
+                <UpdateButton id={props.id} />
+                <DeleteButton id={props.id} />
             </td>
         </tr>
-
     )
 }
-export default TableData;

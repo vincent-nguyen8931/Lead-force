@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import style from "./style.css"
 import API from "../../utils/API";
-import { Input, TextArea } from "../Form";
-// import BorderPage from "/Border"
+import { Input } from "../Form";
 
-class LeadHeader extends Component {
+export default class LeadHeader extends Component {
   // create constructor that takes in props
   constructor(props) {
     super(props)
@@ -18,8 +17,7 @@ class LeadHeader extends Component {
       firstName: "",
       lastName: "",
       phone: "",
-      email: "",
-      notes: ""
+      email: ""
     };
   }
 
@@ -47,7 +45,7 @@ class LeadHeader extends Component {
   render() {
     return (
       <div className="jumbotron3">
-        <div className="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div className="modal fade" id="addLeads" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div className="modal-dialog modal-dialog-centered" role="document">
             <div className="modal-content">
               <div className="modal-body">
@@ -73,7 +71,7 @@ class LeadHeader extends Component {
             <div className="card1">
               <div className="card-body">
                 <h2 className="Leadheader">Leads</h2>
-                <button type="button" class="btn1 btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                <button type="button" class="btn1 btn-primary" data-toggle="modal" data-target="#addLeads">
                   Add Leads
                 </button>
               </div>
@@ -84,5 +82,3 @@ class LeadHeader extends Component {
     )
   }
 }
-
-export default LeadHeader;

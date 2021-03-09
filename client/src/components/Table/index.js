@@ -27,7 +27,6 @@ export default class Table extends Component {
         <table className="table table-bordered table-hover">
           <thead>
             <tr>
-              <th scope="col">#</th>
               <th scope="col">First Name</th>
               <th scope="col">Last Name</th>
               <th scope="col">Email Address</th>
@@ -38,12 +37,12 @@ export default class Table extends Component {
           <tbody>
             {this.state.leads.map(item =>
               <TableData
+                id={item.id}
                 firstName={item.firstName}
                 lastName={item.lastName}
                 email={item.email}
                 phone={item.phone}
               />)}
-
           </tbody>
         </table>
       </div >
