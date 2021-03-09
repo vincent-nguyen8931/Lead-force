@@ -1,9 +1,8 @@
 #about{
     position:relative;
-    /* background: url(office1.jpg)no-repeat; */
+    background: url(../../Images/office1.jpg)no-repeat;
     background-size: cover;
     background-position: center;
-    /* margin-top: 3rem; */
     height: 50vh;
     text-align: center;
 }
@@ -17,4 +16,3 @@
      margin-top: 1rem;
      text-transform: uppercase;    
  }
-

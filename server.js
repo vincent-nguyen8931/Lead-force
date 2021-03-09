@@ -32,9 +32,6 @@ app.use(function (req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"))
 })
 
-// Here we introduce HTML routing to serve different HTML files
-// require("./routes/html-routes.js")(app);
-
 // Starts the server to begin listening
 // =============================================================
 db.sequelize.sync().then(function () {

@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./style.css";
-// import picture from "./_Logo.png";
 
 export default function About() {
     return (
