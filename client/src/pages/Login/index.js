@@ -1,12 +1,8 @@
 import React, { Component } from "react";
-
-import LoginButton from "../../components/Redirect";
 import style from "./Login.css";
 import Redirect from "../../components/Redirect";
 import Nav from "../../components/Navbar";
-import Members from "../Members"
 import API from "../../utils/API";
-import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
 
 
@@ -29,16 +25,6 @@ class Login extends Component {
       emailLogin: ""
     };
   }
-  // redicret true or redirect false in component
-  // but redirect also has to be rendered
-  // create button that is aware of state of parent
-  // oncilck with redirect and perform callback
-  // callback frst, change loal state
-  // makes all child rerendered
-  // child sees redirect and render redicrect instead of button
-
-  // withRouter on component
-  // provide component to give access to history
 
   // function to listen for username input, password input on signup + login, & email input on signup + login
   onChangeState(e, key) {
@@ -64,7 +50,7 @@ class Login extends Component {
 
   };
 
-  // Listen for click for user login. Next create a userObjectLogin that contains the email, and password states from this page. Next send this userObjectLogin to the route setup by the backend to interact with the database. Lastly, reset the state of the input boxes to empty.
+  // Listen for click for user login. Next create a userObjectLogin that contains the email, and password states from this page. Next, send this userObjectLogin to the route setup by the backend to interact with the database. Then, the user will be rerouted to the members page. Lastly, reset the state of the input boxes to empty.
   userLogin(e) {
     e.preventDefault()
     var userObjectLogin = {
@@ -73,7 +59,6 @@ class Login extends Component {
     };
     API.login(userObjectLogin).then(res => {
       console.log(res.data)
-      console.log("Pulled information successfull")
       this.setState({ redirect: true })
     })
       .catch(err => console.log(err));
@@ -85,7 +70,6 @@ class Login extends Component {
     return (
       <div>
         <Nav />
-
         <div className="row" >
           <div className="col-6" >
             <div className="div-login">
@@ -106,12 +90,11 @@ class Login extends Component {
               <input placeholder="Password" onChange={(e) => this.onChangeState(e, "passwordLogin")} name="passwordLogin" value={this.state.passwordLogin} />
 
               <button name="userLogin" onClick={this.userLogin}>Login</button>
-              {/* <Link to="/members" name="userLogin" onClick={this.userLogin}>Login</Link> */}
-            </div >
+            </div>
           </div>
           <div className="logo"></div>
         </div>
-        {/* <Footer /> */}
+        <Footer />
         {this.state.redirect ? <Redirect /> : null}
       </div>
 
