@@ -10,6 +10,7 @@ constructor(props) {
   this.deleteLead = this.deleteLead.bind(this);
 }
 
+// Delete lead function that makes api call to the backend
 deleteLead(e) {
   e.preventDefault()
 

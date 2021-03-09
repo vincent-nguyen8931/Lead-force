@@ -5,13 +5,12 @@ import Nav from "../../components/Navbar";
 import API from "../../utils/API";
 import Footer from "../../components/Footer";
 
-
-class Login extends Component {
+export default class Login extends Component {
   // create constructor that takes in props
   constructor(props) {
     super(props)
 
-    // will read the changes made in each input field on this page
+    // will read the changes made in each input field on this page and onChangeState function
     this.userSignup = this.userSignup.bind(this);
     this.userLogin = this.userLogin.bind(this);
     this.onChangeState = this.onChangeState.bind(this);
@@ -74,25 +73,20 @@ class Login extends Component {
           <div className="col-6" >
             <div className="div-login">
               <h2 className="signup">Signup</h2>
-
               <input placeholder="Username" onChange={(e) => this.onChangeState(e, "username")} name="username" value={this.state.username} />
               <input placeholder="Password" onChange={(e) => this.onChangeState(e, "passwordSignup")} name="passwordSignup" value={this.state.passwordSignup} />
               <input placeholder="Email Address" onChange={(e) => this.onChangeState(e, "emailSignup")} name="emailSignup" value={this.state.emailSignup} />
-
               <button name="userSignup" onClick={this.userSignup}>Sign Up</button>
             </div >
           </div>
           <div className="col-6" >
             <div className="div-login1">
               <h2 className="login">Login</h2>
-
               <input placeholder="Email Address" onChange={(e) => this.onChangeState(e, "emailLogin")} name="emailLogin" value={this.state.emailLogin} />
               <input placeholder="Password" onChange={(e) => this.onChangeState(e, "passwordLogin")} name="passwordLogin" value={this.state.passwordLogin} />
-
               <button name="userLogin" onClick={this.userLogin}>Login</button>
             </div>
           </div>
-
         </div>
         <Footer />
         {this.state.redirect ? <Redirect /> : null}
@@ -101,5 +95,3 @@ class Login extends Component {
     )
   }
 }
-
-export default Login;

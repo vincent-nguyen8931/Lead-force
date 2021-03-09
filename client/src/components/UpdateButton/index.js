@@ -20,11 +20,12 @@ constructor(props) {
   };
 }
 
-// function to listen for username input, password input on signup + login, & email input on signup + login
+// function to listen for first name, last name, phone, and email inputs for updating
 onChangeState(e, key) {
   this.setState({ [key]: e.target.value })
 }
 
+// creates the userObjectLead variable to take in the stateful values defined above. The api call takes in the id of the row and this userObjectLead variable and updates the mySQL database. 
 updateLead(e) {
   e.preventDefault()
 
@@ -43,6 +44,7 @@ updateLead(e) {
 
   render() {
     return (
+      // Modal that appears when updating the lead's information upon clicking update button. It contains input for first name, last name, phone, and email. Once the save changes button is clicked, the updateLead function will run. 
       <div>
         <div className="modal fade" id="updateLeads" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div className="modal-dialog modal-dialog-centered" role="document">

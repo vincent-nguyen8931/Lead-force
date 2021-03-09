@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import style from "./style.css"
 import API from "../../utils/API";
 import { Input } from "../Form";
-// import BorderPage from "/Border"
 
-class LeadHeader extends Component {
+export default class LeadHeader extends Component {
   // create constructor that takes in props
   constructor(props) {
     super(props)
@@ -83,5 +82,3 @@ class LeadHeader extends Component {
     )
   }
 }
-
-export default LeadHeader;

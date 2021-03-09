@@ -1,9 +1,8 @@
 import React from "react";
-import API from "../../utils/API";
 import UpdateButton from "../UpdateButton";
 import DeleteButton from "../DeleteButton";
 
-function TableData(props) {
+export default function TableData(props) {
 // returns the table information listed per prop. Each button component is given an id to know which row in the database they are interacting with.
     return (
         <tr>
@@ -18,4 +17,3 @@ function TableData(props) {
         </tr>
     )
 }
-export default TableData;

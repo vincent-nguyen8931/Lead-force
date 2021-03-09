@@ -25,7 +25,7 @@ module.exports = function (app) {
       });
   });
 
-  // Find specific leads
+  // Find specific leads based on id
   app.get("/api/leads/:id", function (req, res) {
     db.Lead.findOne({
       where: {
@@ -37,7 +37,7 @@ module.exports = function (app) {
       });
   });
 
-  // Update lead
+  // Update lead based on id
   app.put("/api/leads/:id", function (req, res) {
     console.log("hello")
     db.Lead.update(req.body, {
@@ -52,7 +52,7 @@ module.exports = function (app) {
       });
   });
 
-  // Delete lead
+  // Delete lead based on id
   app.delete("/api/leads/:id", function (req, res) {
     db.Lead.destroy({
       where: {

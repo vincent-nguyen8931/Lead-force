@@ -26,5 +26,3 @@ export function FormBtn(props) {
         </button>
     );
 }
-
-export default Input;

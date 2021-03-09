@@ -1,7 +1,7 @@
 import React from "react";
 import style1 from "./style1.css"
-// import contact from "../contact.png"
-const Header = () => {
+
+export default function Header() {
     return (
         <div className="jumbotron jumbotron-fluid" id="header">
             <div className="container">
@@ -11,4 +11,3 @@ const Header = () => {
         </div>
     )
 }
-export default Header;

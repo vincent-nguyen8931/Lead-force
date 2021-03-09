@@ -4,8 +4,8 @@ import Members from "./pages/Members";
 import Login from "./pages/Login";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-
-function App() {
+// using BrowserRouter, route the user to following pages when they reach the specific paths listed in each route. 
+export default function App() {
   return (
     <BrowserRouter>
       <div>
@@ -18,5 +18,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;

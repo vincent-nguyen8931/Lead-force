@@ -1,8 +1,7 @@
 import React from "react";
 import style from "./style.css";
-// import picture from "./_Logo.png";
 
-function Description() {
+export default function Description() {
     return (
         <div className="jumbotron jumbotron-fluid" id="description">
             <div className="container" id="description1">
@@ -21,5 +20,3 @@ function Description() {
         </div>
     )
 }
-
-export default Description
