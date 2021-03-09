@@ -38,13 +38,16 @@ module.exports = function (app) {
   });
 
   // Update lead
-  app.put("/api/leads", function (req, res) {
+  app.put("/api/leads/:id", function (req, res) {
+    console.log("hello")
     db.Lead.update(req.body, {
       where: {
         id: req.params.id
       }
     })
       .then(function (dbLead) {
+        console.log("dbLead")
+        console.log(dbLead)
         res.json(dbLead);
       });
   });

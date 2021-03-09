@@ -13,7 +13,6 @@ constructor(props) {
 
   // initial state to set keyname and values
   this.state = {
-    id: "",
     firstName: "",
     lastName: "",
     phone: "",
@@ -28,17 +27,19 @@ onChangeState(e, key) {
 
 updateLead(e) {
   e.preventDefault()
+  console.log("typeof this.props.id")
+  console.log(typeof this.props.id)
 
   var userObjectLead = {
-    id: this.state.id,
     firstName: this.state.firstName,
     lastName: this.state.lastName,
     phone: this.state.phone,
     email: this.state.email
   };
 
-  API.updateLead(userObjectLead).then(res => {
+  API.updateLead(this.props.id, userObjectLead).then(res => {
     console.log(res.data)
+    this.props.getEveryLead()
   })
     .catch(err => console.log(err));
 };
@@ -70,7 +71,7 @@ updateLead(e) {
           <div className="col-sm-12">
             <div className="card1">
               <div className="card-body">
-                <button type="button" onClick={(e) => this.onChangeState(e, "id")} className="btn3 btn-primary badge-pill float-right" value={this.state.id} data-toggle="modal" data-target="#updateLeads">
+                <button type="button" className="btn3 btn-primary badge-pill float-right" value={this.props.id} data-toggle="modal" data-target="#updateLeads">
                   Update
                  </button>
               </div>
