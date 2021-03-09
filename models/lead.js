@@ -1,6 +1,13 @@
 module.exports = function (sequelize, DataTypes) {
   var Lead = sequelize.define("Lead", {
-    name: {
+    firstName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [2]
+      }
+    },
+    lastName: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
@@ -8,7 +15,7 @@ module.exports = function (sequelize, DataTypes) {
       }
     },
     phone: {
-      type: DataTypes.NUMBER,
+      type: DataTypes.STRING,
       allowNull: false,
       validate: {
         len: [10]
@@ -23,9 +30,8 @@ module.exports = function (sequelize, DataTypes) {
       }
     },
     opportunity: {
-      type: DataTypes.BOOLEAN,
+      type: DataTypes.BOOLEAN
       }
-    }
   });
   
   console.log(Lead)

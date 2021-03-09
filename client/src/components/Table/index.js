@@ -16,7 +16,7 @@ export default class Table extends Component {
   getEveryLead() {
     API.getAllLeads().then(res => {
       console.log(res.data)
-      this.setState({leads: res.data})
+      this.setState({ leads: res.data })
     })
       .catch(err => console.log(err));
   }
@@ -28,7 +28,8 @@ export default class Table extends Component {
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">Full Name</th>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
               <th scope="col">Email Address</th>
               <th scope="col">Phone Number</th>
               <th scope="col">Oppurtunity</th>
@@ -38,7 +39,8 @@ export default class Table extends Component {
           <tbody>
             {this.state.leads.map(item =>
               <TableData
-                name={item.name}
+                firstName={item.firstName}
+                lastName={item.lastName}
                 email={item.email}
                 phone={item.phone}
                 oppurtunity={item.oppurtunity}

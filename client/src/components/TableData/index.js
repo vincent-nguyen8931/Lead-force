@@ -5,7 +5,8 @@ function TableData(props) {
     return (
         <tr>
             <th scope="row">1</th>
-            <td>{props.name}</td>
+            <td>{props.firstName}</td>
+            <td>{props.lastName}</td>
             <td>{props.email}</td>
             <td>{props.phone}</td>
             <td>{props.oppurtunity}</td>
