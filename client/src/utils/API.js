@@ -31,8 +31,8 @@ export default {
       axios.put("/api/leads/" + id, userData))
   },
 
-  deleteLead: function (userData) {
+  deleteLead: function (id, userData) {
     return (
-      axios.delete("/api/leads/:id", userData))
+      axios.delete("/api/leads/" + id, userData))
   }
 }

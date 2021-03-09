@@ -27,8 +27,6 @@ onChangeState(e, key) {
 
 updateLead(e) {
   e.preventDefault()
-  console.log("typeof this.props.id")
-  console.log(typeof this.props.id)
 
   var userObjectLead = {
     firstName: this.state.firstName,
@@ -39,7 +37,6 @@ updateLead(e) {
 
   API.updateLead(this.props.id, userObjectLead).then(res => {
     console.log(res.data)
-    this.props.getEveryLead()
   })
     .catch(err => console.log(err));
 };
