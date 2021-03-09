@@ -10,8 +10,7 @@ module.exports = function (app) {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
       phone: req.body.phone,
-      email: req.body.email,
-      opportunity: req.body.opportunity
+      email: req.body.email
     })
       .then(function (dbLead) {
         res.json(dbLead);

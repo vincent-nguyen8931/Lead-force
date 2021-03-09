@@ -1,6 +1,5 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
-import { withRouter } from 'react-router-dom';
+import { useHistory, withRouter } from "react-router-dom";
 
 function Redirect(props) {
   var history = useHistory();
