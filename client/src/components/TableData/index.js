@@ -4,6 +4,7 @@ import UpdateButton from "../UpdateButton";
 import DeleteButton from "../DeleteButton";
 
 function TableData(props) {
+// returns the table information listed per prop. Each button component is given an id to know which row in the database they are interacting with.
     return (
         <tr>
             <td>{props.firstName}</td>
