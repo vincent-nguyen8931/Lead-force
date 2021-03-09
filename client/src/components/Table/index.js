@@ -32,7 +32,6 @@ export default class Table extends Component {
               <th scope="col">Last Name</th>
               <th scope="col">Email Address</th>
               <th scope="col">Phone Number</th>
-              <th scope="col">Oppurtunity</th>
               <th scope="col">Action</th>
             </tr>
           </thead>
@@ -43,7 +42,6 @@ export default class Table extends Component {
                 lastName={item.lastName}
                 email={item.email}
                 phone={item.phone}
-                oppurtunity={item.oppurtunity}
               />)}
 
           </tbody>

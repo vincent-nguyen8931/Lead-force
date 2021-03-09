@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import style from "./style.css"
 import API from "../../utils/API";
-import Input from "../Form";
+import { Input, TextArea } from "../Form";
 // import BorderPage from "/Border"
 
 class LeadHeader extends Component {
@@ -19,7 +19,7 @@ class LeadHeader extends Component {
       lastName: "",
       phone: "",
       email: "",
-      opportunity: true
+      notes: ""
     };
   }
 
@@ -35,8 +35,7 @@ class LeadHeader extends Component {
       firstName: this.state.firstName,
       lastName: this.state.lastName,
       phone: this.state.phone,
-      email: this.state.email,
-      opportunity: this.state.opportunity
+      email: this.state.email
     };
 
     API.addLead(userObjectLead).then(res => {
@@ -61,8 +60,6 @@ class LeadHeader extends Component {
                 <Input onChange={(e) => this.onChangeState(e, "phone")} value={this.state.phone} />
                 <p>Email Address: </p>
                 <Input onChange={(e) => this.onChangeState(e, "email")} value={this.state.email} />
-                <p>Oppurtunity: </p>
-                <Input onChange={(e) => this.onChangeState(e, "opportunity")} value={this.state.opportunity} />
               </div>
               <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>

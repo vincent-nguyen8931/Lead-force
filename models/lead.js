@@ -28,10 +28,7 @@ module.exports = function (sequelize, DataTypes) {
       validate: {
         isEmail: true
       }
-    },
-    opportunity: {
-      type: DataTypes.BOOLEAN
-      }
+    }
   });
   
   console.log(Lead)
