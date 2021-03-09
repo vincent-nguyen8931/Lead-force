@@ -7,7 +7,31 @@ export default {
 
   login: function (userData) {
     return (
-      console.log("Reached axios post"),
       axios.post("/api/login", userData))
+  },
+
+  addLead: function (userData) {
+    return (
+      axios.post("/api/leads", userData))
+  },
+
+  getAllLeads: function () {
+    return (
+      axios.get("/api/leads/"))
+  },
+
+  getLead: function (userData) {
+    return (
+      axios.get("/api/leads/:id", userData))
+  },
+
+  updateLead: function (userData) {
+    return (
+      axios.put("/api/leads", userData))
+  },
+
+  deleteLead: function (userData) {
+    return (
+      axios.delete("/api/leads/:id", userData))
   }
 }
