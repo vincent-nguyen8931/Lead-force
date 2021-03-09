@@ -1,9 +1,9 @@
 #about{
     position:relative;
-    background: url(office1.jpg)no-repeat;
+    /* background: url(office1.jpg)no-repeat; */
     background-size: cover;
     background-position: center;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     height: 50vh;
     text-align: center;
 }

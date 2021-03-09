@@ -1,6 +1,9 @@
 .jumbotron{
-    margin-top: 5rem;
+    /* margin-top: 1rem; */
     text-align:center;
+    background: url(grey.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .question1{

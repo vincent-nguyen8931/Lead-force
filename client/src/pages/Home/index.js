@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <Nav />
       <Header />
-      <About />
+      {/* <About /> */}
       <Description />
       <Footer />
     </div>
