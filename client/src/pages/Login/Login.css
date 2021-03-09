@@ -10,8 +10,9 @@
     /* border-radius: 1rem; */
     
     padding: 2rem;
+    margin-left:30rem;
     margin-top: 22.2rem;
-    background-color: white;
+    /* background-color: white; */
     padding-bottom: 30rem;
 } 
 .row{
@@ -51,11 +52,11 @@ button{
 }
 
 .login {
-  color: black;
+  color: white;
 }
 
 .signup{
-    color:black
+    color:white
 }
 
 .signingup{
@@ -78,13 +79,13 @@ button{
     border-radius: 5rem;
     padding: 2rem;
     margin-top: 21rem;
+    margin-left:30rem;
+   
     /* margin-left:7rem; */
-    padding-bottom: 30rem;
+    /* padding-bottom: 20rem; */
     
 }
-.login{
-    color:black;
-}
+
 
 .signupText{
     font-size: 0.9rem;
@@ -104,3 +105,12 @@ button{
     margin-left: 50rem;
     display:block;
 } */
+
+.loginstyle{
+justify-content: center;
+position:relative;
+    background: url(back4.png);
+    background-size: cover;
+    background-position: center;
+
+}

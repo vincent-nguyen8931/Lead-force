@@ -1,7 +1,9 @@
 import React from 'react';
 import Home from "./pages/Home";
+import Members from "./pages/Members";
 import Login from "./pages/Login";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+
 
 function App() {
   return (

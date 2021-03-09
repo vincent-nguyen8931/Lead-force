@@ -39,7 +39,8 @@ nav ul li {
     
 }
 .navbar {
-    background-color: rgba(128, 128, 128, 0.111);
+    background-color: white;
+    /* border-color: black; */
 }
 
 .navbar-nav>li>a.active, .navbar-nav>li>a.active:focus{

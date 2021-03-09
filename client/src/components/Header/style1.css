@@ -1,14 +1,22 @@
-.jumbotron {
+#header {
     position:relative;
     background: url(back4.png);
     background-size: cover;
     background-position: center;
     padding-top: 5%;
     padding-bottom: 5%;
-color:white
-    /* height: 40vh; */
+color:white;
+margin-top:0rem;
+    height: 45vh;
 
 }
+
+.header-welcome{
+    font-size: 4rem;
+}
+
+
+
 /* 
 .main-info1{
     display: flex;

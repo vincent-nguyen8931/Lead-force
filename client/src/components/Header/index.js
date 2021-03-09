@@ -4,10 +4,10 @@ import style1 from "./style1.css"
 const Header = () => {
     return (
 
-        <div className="jumbotron jumbotron-fluid">
+        <div className="jumbotron jumbotron-fluid" id="header">
             <div className="container">
-                <h1>Welcome User</h1>
-                <h2>Thank you for choosing Lead Force! We are a start up company that focuses on helping business's grow </h2>
+                <h1 className="header-welcome">WELCOME USER!</h1>
+                <h2>Thank you for choosing Leads Force! </h2>
             </div>
         </div>
 

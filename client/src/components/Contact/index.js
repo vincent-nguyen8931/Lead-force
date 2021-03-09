@@ -1,9 +1,9 @@
 import React from "react";
-// import style2 from "./style2.css"
+import style2 from "./style2.css"
 // import contact from "../contact.png"
 const Contact = () => {
     return (
-        <div className="header-wrapper">
+        <div className="container" id="contact">
 
             {/* <img src={contact} class="contact-pic"></img> */}
             <h1>Contact Us</h1>
