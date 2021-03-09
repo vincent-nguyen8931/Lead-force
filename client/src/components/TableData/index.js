@@ -4,7 +4,6 @@ import UpdateButton from "../UpdateButton";
 import DeleteButton from "../DeleteButton";
 
 function TableData(props) {
-
     return (
         <tr>
             <td>{props.firstName}</td>
@@ -18,5 +17,4 @@ function TableData(props) {
         </tr>
     )
 }
-
 export default TableData;
