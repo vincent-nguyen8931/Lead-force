@@ -1,7 +1,6 @@
 import React from "react";
 
 function TableData(props) {
-
     return (
         <tr>
             <th scope="row">1</th>
@@ -17,7 +16,4 @@ function TableData(props) {
 
     )
 }
-
-
-
 export default TableData;

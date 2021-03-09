@@ -11,13 +11,10 @@ function Footer() {
              Terms Of Service | Privacy</a>
             </nav>
         </div>
-
         //             &copy;{new Date().getFullYear()} Lead Force | All rights reserved |
         //     Terms Of Service | Privacy
         //   </div>
         // </div>
-
-
     );
 }
 

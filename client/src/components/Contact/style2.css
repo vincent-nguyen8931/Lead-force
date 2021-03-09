@@ -6,10 +6,7 @@
     background-position: center;
     height: 50vh;
     width:100rem;
-   
-
 }
-
 .main-info{
     display: flex;
     flex-direction: column;
@@ -32,8 +29,6 @@ h2 {
     margin-top: 10rem;
     
 }
-
- 
 .social-icons{
     font-size:3rem;
     margin-top: 5rem;
@@ -48,12 +43,6 @@ h2 {
 .social-icons a:hover{
     color: rgb(86, 86, 243)
 }
-
-/* .line-break1{
-    width: 350px;
-    margin:0 auto;
-    border-top: 1px solid white;
-} */
 .fab {
     margin-right: 2rem;
 } 
@@ -63,20 +52,3 @@ h2 {
     border-top:1px solid white;
 }
 
-/* .main-footer {
-    color: white;
-    background-color: dodgerblue;
-    padding-top: 3em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    /* margin-bottom: auto;  */
-    /* display: flex; */
-    /* flex-direction: column; */
-    
-  /* } */
-
-  /* .container{
-      height:10rem
-  } */
-   

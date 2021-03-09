@@ -9,7 +9,6 @@ const Contact = () => {
             <h1>Contact Us</h1>
             <div className="line-break1"></div>
             <div className="row">
-                {/* d-flex justify-content-center */}
                 <div className="col-6">
                     <div className="social-icons">
                         <a href="https://github.com/austinwoo123" target="_blank"><i className="fab fa-github-square"></i></a>
@@ -18,7 +17,6 @@ const Contact = () => {
                     </div>
                     <div className="line-break2"></div>
                     <h3>   Austin Woo   </h3>
-                    {/* <h3>Email: awoo004@ucr.edu</h3> */}
                 </div>
                 <div className="col-6" >
                     <div className="social-icons">
@@ -28,11 +26,9 @@ const Contact = () => {
                     </div>
                     <div className="line-break2"></div>
                     <h3> Vincent Nguyen </h3>
-                    {/* <h3>Email: vincent.nguyen8931@gmail.com</h3> */}
                 </div>
             </div>
         </div >
-
     )
 }
 export default Contact;

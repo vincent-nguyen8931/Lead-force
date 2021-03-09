@@ -3,18 +3,12 @@ import style1 from "./style1.css"
 // import contact from "../contact.png"
 const Header = () => {
     return (
-
         <div className="jumbotron jumbotron-fluid" id="header">
             <div className="container">
                 <h1 className="header-welcome">WELCOME USER!</h1>
                 <h2>Thank you for choosing Leads Force! </h2>
             </div>
         </div>
-
-
-
-
-
     )
 }
 export default Header;

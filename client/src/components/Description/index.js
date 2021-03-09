@@ -4,8 +4,6 @@ import style from "./style.css";
 
 function Description() {
     return (
-
-
         <div className="jumbotron jumbotron-fluid" id="description">
             <div className="container" id="description1">
                 <div className="question1">
@@ -22,11 +20,6 @@ function Description() {
             </div>
         </div>
     )
-
-
-
-
-
 }
 
 export default Description

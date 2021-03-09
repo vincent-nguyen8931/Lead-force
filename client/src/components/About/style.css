@@ -1,14 +1,3 @@
-/* .container-1{
-    position:relative;
-    width: 50rem;
-    height: 50rem;
- 
-    background-color: rgba(0,0,0,0.071);
-    padding: 20px;
-    margin: 0 auto;
-    margin-top: 10rem;
-    text-align: center;
-} */
 #about{
     position:relative;
     background: url(office1.jpg)no-repeat;
@@ -16,55 +5,16 @@
     background-position: center;
     margin-top: 3rem;
     height: 50vh;
-
-    /* padding: 20px; */
-    /* margin: 0 auto; */
-    /* margin-top: 4rem; */
     text-align: center;
-    /* width: 150vh; */
 }
-
 .about-Name {
-    /* font-weight: 1; */
     letter-spacing: 6;
     font-size: 4rem;
     color:rgb(255, 255, 255)
-/* color: black */
-
 }
-
-
-/* h2 {
-    font-weight: 100;
-    letter-spacing: 1;
-    font-size:36px
-} */
-
-
-/* .profile-pic { */
-    /* border-radius:50%; */
-    /* height: 13rem;
-    width: 13rem; */
-    /* border-style: solid; */
-    /* border-color: white; */
-    /* border-width: 10px;
-    border-radius:60%; */
-    /* } */
-
- /* p{
-    font-size:24px
-        
-        } */
- .line-break{
-            /* width: 200px; */
-            /* margin:0 auto; */
-            /* border-top: 1px solid black */
-        }
-
  .Lead-Header{
      color: white;
      margin-top: 1rem;
-     text-transform: uppercase;
-     
+     text-transform: uppercase;    
  }
 

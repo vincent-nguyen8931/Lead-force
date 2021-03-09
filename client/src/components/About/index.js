@@ -4,7 +4,6 @@ import picture from "./_Logo.png";
 
 function About() {
     return (
-
         <div className="jumbotron jumbotron-fluid" id="about">
             <div className="container">
                 <h1 className="about-Name">Leads Force</h1>
