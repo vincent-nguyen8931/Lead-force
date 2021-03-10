@@ -69,7 +69,7 @@ export default class Login extends Component {
     return (
       <div className="loginstyle">
         <Nav />
-        <div className="row" >
+        <div className="row">
           <div className="col-6" >
             <div className="div-login">
               <h2 className="signup">Signup</h2>
@@ -77,10 +77,10 @@ export default class Login extends Component {
               <input placeholder="Password" onChange={(e) => this.onChangeState(e, "passwordSignup")} name="passwordSignup" value={this.state.passwordSignup} />
               <input placeholder="Email Address" onChange={(e) => this.onChangeState(e, "emailSignup")} name="emailSignup" value={this.state.emailSignup} />
               <button name="userSignup" onClick={this.userSignup}>Sign Up</button>
-            </div >
+            </div>
           </div>
           <div className="col-6" >
-            <div className="div-login1">
+            <div className="div-login">
               <h2 className="login">Login</h2>
               <input placeholder="Email Address" onChange={(e) => this.onChangeState(e, "emailLogin")} name="emailLogin" value={this.state.emailLogin} />
               <input placeholder="Password" onChange={(e) => this.onChangeState(e, "passwordLogin")} name="passwordLogin" value={this.state.passwordLogin} />
@@ -91,7 +91,6 @@ export default class Login extends Component {
         <Footer />
         {this.state.redirect ? <Redirect /> : null}
       </div>
-
     )
   }
 }

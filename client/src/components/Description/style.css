@@ -1,28 +1,30 @@
 .jumbotron{
-    margin-top: 5rem;
-    text-align:center;
+  text-align:center;
+  background-size: cover;
+  background-position: center;
+  background: url(grey.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:100vh
 }
 
-.question1{
-    margin-bottom: 10rem;
-
+.question1,
+.question2{
+  
+  margin-bottom: 10rem;
 }
- p{
-    font-size:24px;
-    text-align: left;
-        }
- .question2{
-     margin-bottom:10rem;
+
+p{
+  font-size:24px;
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+.question-1,
+.question-2,
+.question-3{
+  color: black;
+  font-size: 3rem;
  }
- .question-1{
-    color: black;
-    font-size: 3rem;
- }
- .question-2{
-    color: black;
-    font-size: 3rem;
- }
- .question-3{
-    color: black;
-    font-size: 3rem;
- }
+
+ 

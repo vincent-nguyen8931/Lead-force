@@ -1,20 +1,18 @@
 #about{
     position:relative;
-    background: url(office1.jpg)no-repeat;
+    background: url(../../Images/office1.jpg)no-repeat;
     background-size: cover;
     background-position: center;
-    margin-top: 3rem;
     height: 50vh;
     text-align: center;
 }
 .about-Name {
     letter-spacing: 6;
     font-size: 4rem;
-    color:rgb(255, 255, 255)
+    /* color:rgb(255, 255, 255) */
 }
  .Lead-Header{
-     color: white;
+     /* color: white; */
      margin-top: 1rem;
      text-transform: uppercase;    
  }
-

@@ -1,15 +1,16 @@
 #header {
     position:relative;
-    background: url(back4.png);
+    background: url(office1.jpg);
     background-size: cover;
     background-position: center;
-    padding-top: 5%;
+    /* padding-top: 5%; */
     padding-bottom: 5%;
-color:white;
+/* color:black; */
 margin-top:0rem;
     height: 45vh;
 
 }
 .header-welcome{
     font-size: 4rem;
+    color:black
 }
