@@ -9,10 +9,10 @@
 .about-Name {
     letter-spacing: 6;
     font-size: 4rem;
-    color:rgb(255, 255, 255)
+    /* color:rgb(255, 255, 255) */
 }
  .Lead-Header{
-     color: white;
+     /* color: white; */
      margin-top: 1rem;
      text-transform: uppercase;    
  }
